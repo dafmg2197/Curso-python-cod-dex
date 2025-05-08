@@ -1,0 +1,29 @@
+### for loops
+
+def main ():
+  names = ["Mario", "Luigi", "Daisy", "Yoshi"]
+  for name in names:
+    Print(write_letter(name, "Princess Peach"))
+
+### Permite 'iterar' o 'recorrer' los nombres listados en el 'diccionario'; 
+### por lo que el ciclo finalizará cuando ya no haya nombres en él.
+
+
+def write_letter(reciever, sender):
+  return f"""
+  +------------------------------------------------+
+    Dear {reciever},
+
+    You're cordially invited to a ball at Peach's
+    Castle this evening, 7:00pm.
+
+    Sincerely,
+    {sender}
+  +------------------------------------------------+
+  """
+
+### Este será el contenido que llevará la 'carta de invitación' que Peach 
+le hace a cada personaje. Reciever está en la misma posición en el listado
+que los nombres del 'diccionario', y 'Princess Peach' en la misma posición
+que Sender, por eso es que al momento de ejecutar el programa, se concatenan
+los nombres con el contenido de la carta.
